@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #000, #222) no-repeat 0 0;
+    height: 100vh;
+    margin :0;
+    padding :0;
+    transition: 1s;
+}
+
+header{
+    display: flex;
+    background-color: #111;
+    width: 100%;
+    align-items: flex-end;
+}
+
+
+header a{
+    color: #bbb;
+    text-decoration: none;
+    transition: 1s;
+}
+
+header a:hover{
+    color: #fff;
+    transition: 1s;
+}
+
+nav {
+    display:flex;
+    max-width: 960px;
+    margin: 0;
+    width: 50%;
+    justify-content: center;;
+}
+
+h1 {
+    margin: auto;
+    text-align : center;
+    color: #fff;
+    align-content: center;
+}
+
+nav ul {
+    display:flex;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: 1s;
+}
+
+nav ul:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+nav li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #ddd;
+    transition: 1s;
+}
+
+nav li:hover{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    scale : 1.3;
+    transition: 1s;
+}
+
+#about {
+    padding: 4rem 0;
+    text-align: center;
+    margin:0em 10em 5em 10em;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#header.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+#switch.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    background-color: #111;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    transition: 1s;
+    height:1%;
+}
+
+button:hover{
+    background-color: #fff;
+    border: 2px solid #111;
+}
+
+#night_mode_svg {
+    stroke: #fff;
+    fill: #fff;
+    padding: 5px;
+}
+#night_mode_svg.swapped {
+    stroke: #111;
+    fill: #111;
+    padding: 5px;
+}
+
+footer{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#body{
+    color: #eee;
+    transition: 1s;
+}
+
