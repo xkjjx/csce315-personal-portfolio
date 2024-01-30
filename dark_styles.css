@@ -75,10 +75,6 @@ nav li:hover{
     margin:0em 10em 5em 10em;
 }
 
-section h2 {
-    margin-bottom: 2rem;
-}
-
 .container {
     max-width: 960px;
     margin: 0 auto;
