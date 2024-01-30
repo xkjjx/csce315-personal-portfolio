@@ -72,7 +72,6 @@ nav li:hover{
 
 #about {
     padding: 4rem 0;
-    text-align: center;
     margin:0em 10em 5em 10em;
 }
 
@@ -136,14 +135,8 @@ footer{
     transition: 1s;
 }
 
-#projects{
-    padding: 4rem 0;
-    text-align: center;
-    margin:0em 10em 5em 10em;
-}
-.instagram-media{
-    align-items: center;
-}
+
+
 
 
 

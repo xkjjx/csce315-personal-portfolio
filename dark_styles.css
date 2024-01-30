@@ -1,7 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #000, #222) no-repeat 0 0;
-    height: 100vh;
+    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #111, #333) no-repeat 0 0;
+    height: auto;
+    min-height: 100vh;
     margin :0;
     padding :0;
     transition: 1s;
@@ -71,7 +72,6 @@ nav li:hover{
 
 #about {
     padding: 4rem 0;
-    text-align: center;
     margin:0em 10em 5em 10em;
 }
 
@@ -80,7 +80,6 @@ section h2 {
 }
 
 .container {
-    display: flex;
     max-width: 960px;
     margin: 0 auto;
     padding: 2rem;
@@ -119,8 +118,8 @@ button:hover{
     padding: 5px;
 }
 #night_mode_svg.swapped {
-    stroke: #111;
-    fill: #111;
+    stroke: #000;
+    fill: #000;
     padding: 5px;
 }
 
@@ -129,12 +128,16 @@ footer{
     color: #fff;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: relative;
 }
 
 #body{
-    color: #eee;
+    color: #ddd;
     transition: 1s;
 }
+
+
+
+
+
 
