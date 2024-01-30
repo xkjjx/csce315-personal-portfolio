@@ -128,11 +128,24 @@ footer{
     color: #fff;
     text-align: center;
     width: 100%;
-    position: relative;
 }
 
 #body{
     transition: 1s;
+}
+
+
+#resume{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    margin:0em 10em 5em 10em;
+    height: 1100px;
+}
+#resumePDF{
+    height: 100%;
+    width: 80%;
+
 }
 
 
