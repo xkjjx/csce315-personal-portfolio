@@ -1,4 +1,4 @@
-theme = localStorage.getItem("theme");
+let theme = localStorage.getItem("theme");
 if(theme === null){
     theme = "light";
 }
@@ -8,6 +8,22 @@ if(theme === "dark"){
 else{
     setLightTheme();
 }
+
+let currentDate = new Date();
+let hours = currentDate.getHours();
+let minutes = currentDate.getMinutes();
+let seconds = currentDate.getSeconds();
+let ampm = hours >= 12 ? 'PM' : 'AM';
+if(hours > 12){
+    hours -= 12;
+}
+
+let time = hours + ":" + minutes + " " + ampm;
+scrollerTxt = "Your time : " + time;
+console.log(time);
+// document.getElementById("weatherHeader").innerHTML = scrollerTxt;
+
+
 
 function setDarkTheme(){
     document.getElementById("stylesheet").href = "dark_styles.css";

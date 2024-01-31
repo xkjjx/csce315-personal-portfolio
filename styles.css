@@ -1,6 +1,18 @@
+:root {
+    --mouse-x: 0;
+    --mouse-y: 0;
+    --primary-color: #000;
+    --primary-color-contrast: #fff;
+    --primary-color-off: #222;
+    --primary-color-off-contrast: #bbb;
+    --primary-color-1: #fff;
+    --primary-color-2: #ccc;
+    --primary-color-3: #000;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #fff, #ccc) no-repeat 0 0;
+    background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), var(--primary-color-1), var(--primary-color-2)) no-repeat 0 0;
     height: auto;
     min-height: 100vh;
     margin :0;
@@ -10,20 +22,20 @@ body{
 
 header{
     display: flex;
-    background-color: #111;
+    background-color: var(--primary-color);
     width: 100%;
     align-items: flex-end;
 }
 
 
 header a{
-    color: #bbb;
+    color: var(--primary-color-off-contrast);
     text-decoration: none;
     transition: 1s;
 }
 
 header a:hover{
-    color: #fff;
+    color: var(--primary-color-contrast);
     transition: 1s;
 }
 
@@ -38,7 +50,7 @@ nav {
 h1 {
     margin: auto;
     text-align : center;
-    color: #fff;
+    color: var(--primary-color-contrast);
     align-content: center;
 }
 
@@ -59,8 +71,9 @@ nav ul:hover{
 nav li {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    color: #ddd;
+    color: var(--primary-color-off-contrast);
     transition: 1s;
+    height: 100%;
 }
 
 nav li:hover{
@@ -72,7 +85,7 @@ nav li:hover{
 
 #about {
     padding: 4rem 0;
-    margin:0em 10em 5em 10em;
+    margin:0em 10% 5% 10%;
 }
 
 .container {
@@ -95,38 +108,62 @@ nav li:hover{
 
 }
 
+#club.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button{
-    background-color: #fff;
-    border: 2px solid #111;
+    background-color: var(--primary-color-contrast);
+    border: 2px solid var(--primary-color);
     border-radius: 20%;
     transition: 1s;
     height:1%;
 }
 
 button:hover{
-    background-color: #111;
-    border: 2px solid #fff;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color-contrast);
+}
+
+#linkedin button{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #night_mode_svg {
-    stroke: #000;
-    fill: #000;
-    padding: 5px;
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+    padding: 1px;
 }
 #night_mode_svg.swapped {
-    stroke: #fff;
-    fill: #fff;
+    stroke: var(--primary-color-contrast);
+    fill: var(--primary-color-contrast);
+    padding: 1px;
+}
+#linkedin_svg {
+    stroke: var(--primary-color);
+    fill: var(--primary-color);
+    padding: 0px;
+}
+
+#club_svg{
+    stroke: var(--primary-color-3);
+    fill: var(--primary-color-3);
     padding: 5px;
 }
 
 footer{
-    background-color: #111;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--primary-color-contrast);
     text-align: center;
     width: 100%;
 }
 
 #body{
+    color: var(--primary-color-3);
     transition: 1s;
 }
 
@@ -150,42 +187,56 @@ footer{
   overflow: hidden;
 }
 
-#scroll-text {
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
+
+#weather{
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+#weather header{
+    color: var(--primary-color-off-contrast);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
 }
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
+from { -moz-transform: translateX(100%); }
+to { -moz-transform: translateX(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
 }
 
 @keyframes my-animation {
-  from {
+from {
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-  }
-  to {
+}
+to {
     -moz-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
+}
+}
 
-
+.pfp {
+    width: 30%;
+    height: auto;
+    border-radius: 5%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
 
