@@ -172,7 +172,7 @@ function getCollegeStationWeather() {
 function setCollegeStationWeather(){
     getCollegeStationWeather().then(data => {
         scrollerTxt = " Welcome to My Website! | Your time : " + time + " | College Station Temperature : " + data.temp + "°F | Sunrise : " + format24HRto12HR(data.sunrise) + " | Sunset : " + format24HRto12HR(data.sunset) + " | " + data.conditions + " |";
-        document.getElementById("weatherHeader").innerHTML = scrollerTxt.repeat(2);
+        document.getElementById("weatherHeader").innerHTML = scrollerTxt.repeat(200);
     });
 }
 
