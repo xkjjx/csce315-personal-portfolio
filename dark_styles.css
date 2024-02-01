@@ -195,7 +195,7 @@ footer{
 }
 #weather header{
     color: var(--primary-color-off-contrast);
-    
+    white-space: nowrap;
     -moz-animation: my-animation 30s linear infinite;
     -webkit-animation: my-animation 30s linear infinite;
     animation: my-animation 30s linear infinite;
