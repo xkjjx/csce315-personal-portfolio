@@ -290,4 +290,15 @@ to {
     display: flex;
   }
 
+  #IGCFMarketing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  #instagram-embed-0{
+    border-radius: 15px !important;
+}
+    
+
 

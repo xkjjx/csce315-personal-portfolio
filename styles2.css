@@ -133,7 +133,7 @@ nav li:hover{
   margin: auto;
   transition: 1s;
   justify-content: center;
-  height: 5%;
+  height: 1%;
   align-items: center;
   
 }
@@ -220,4 +220,14 @@ footer a{
 #spotify{
   justify-content: center;
   display: flex;
+}
+
+#instagram-embed-0{
+  border-radius: 15px !important;
+  }
+
+  #IGCFMarketing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
