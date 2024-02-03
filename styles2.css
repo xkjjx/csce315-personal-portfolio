@@ -57,15 +57,15 @@ nav {
 
 #about {
   width: auto;
-  background-image: url("../images/background1.jpg");
+  background-image: url("images/background1.jpg");
   background-blend-mode: overlay;
-  background-color: rgba(var(--primary-color-1), 0.5);
   background-attachment: fixed;
+  background-color: rgba(var(--primary-color-1), 0.5);
 }
 
 #resumeAbout {
   width: 100%;
-  background-image: url("../images/background1.jpg");
+  background-image: url("images/background1.jpg");
   background-blend-mode: overlay;
   background-color: rgba(var(--primary-color-1), 0.5);
   background-attachment: fixed;
@@ -138,18 +138,6 @@ nav li:hover{
   
 }
 
-#toggle1 {
-  display: none;
-}
-#toggle2 button{
-  background-color: transparent;
-  border: 2px solid var(--primary-color-contrast);
-  color: var(--primary-color-contrast);
-  margin: 10px;
-  transition: 1s;
-  height:1%;
-}
-
 #weather{
   display: none;
 }
@@ -216,4 +204,15 @@ footer a{
 
 #footerFirst{
   display: none;
+}
+#toggle1 {
+  display: none;
+}
+#toggle2 button{
+  background-color: transparent;
+  border: 2px solid var(--primary-color-contrast);
+  color: var(--primary-color-contrast);
+  margin: 10px;
+  transition: 1s;
+  height:1%;
 }
