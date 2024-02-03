@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id = "stylesheet" rel="stylesheet" href="styles.css">
+    <link id = "stylesheet" rel="stylesheet" href="firstStyles/styles.css">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kevin Johnson</title>
 </head>
 <body> 
-        <header>      
+        <header id="nav">
+            <h3 onclick="hideNavbar()">&#8592</h3>  
             <h1>KEVIN JOHNSON</h1> 
             
             <nav>      
@@ -24,7 +25,6 @@
                     </ul>      
                 </div>    
             </nav>
-
             
             <div class="socials">
                 <a href="https://github.com/xkjjx" class="fa fa-github"></a>
@@ -34,6 +34,14 @@
             <div class="dark-mode-toggle">
                 <button class="gg-dark-mode" onclick="switchStyles()"></button>
             </div>
+            <div id="toggle1" class="dark-mode-toggle" onclick="toggleThemes()">
+                <button>Swap themes</button>
+            </div>
+            <div id="toggle2" class="dark-mode-toggle" onclick="toggleThemes()">
+                <button><p><i class="fa fa-repeat"></i>&nbsp;Swap themes</p></button>
+            </div>
+            
+
             
         </header>
         <div id="weather">
@@ -43,7 +51,7 @@
         </div>  
         
         <section id="about">
-            <img class="pfp" src="pfp.jpg" alt="Kevin Johnson"/>
+            <img class="pfp" src="images/pfp.jpg" alt="Kevin Johnson"/>
             <div id="body" class="container">
                 <h2>
                     About Me
@@ -58,23 +66,39 @@
                     At Texas A&M University, I am involved in MSC Hospitality and Student Engineers' Council. In MSC Hospitality, I participated in many service events that helped local residents of the Bryan-College Station area as well as Texas A&M students. In SEC (Student Engineers' Council), I helped organize the Spring 2024 Engineering Career Fair, the pinnacle recruiting event for Texas A&M Engineers.
                 </p>
                 <p>
-                    In addition, I love running - in my time at high school cross country, I have built up to 60 miles per week at certain points and I believe this played a crucial role in making me who I am today. I still run ocassionally, so feel free to check my running page!
+                    In addition, I love running - in my time at high school cross country, I have built up to 60 miles per week at certain points and I believe this played a crucial role in making me who I am today. I still run occasionally, although I am far from the fitness I achieved during when I ran Cross Country.
                 </p>
             </div>
             <div></div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
-                <p>Phone number: (551)233-3003</p>
-                <div class="socials">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                </div>
+            <div id="footerSecond">
+                <footer >
+                    <div class="container">
+                        <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
+                        <p>Phone number: (551)233-3003</p>
+                        <div class="socials">
+                            <a href="https://github.com/xkjjx" class="fa fa-github"></a>
+                            <a href="https://www.linkedin.com/in/kjonasj/" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            
-        </footer>
+        </section>
+
+        <div id="footerFirst">
+            <footer>
+                <div class="container">
+                    <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
+                    <p>Phone number: (551)233-3003</p>
+                    <div class="socials">
+                        <a href="https://github.com/xkjjx" class="fa fa-github"></a>
+                        <a href="https://www.linkedin.com/in/kjonasj/" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        
+        
 </body>
 </html>
 <script src="script.js"></script>
