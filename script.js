@@ -28,6 +28,7 @@ function hideNavbar() {
           setSecondLightTheme();
       }
   }
+setCollegeStationWeather();
   
 //   function setMainTheme(){
 //     document.getElementById("footerSecond").display = "none";
