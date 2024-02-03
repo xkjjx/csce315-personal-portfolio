@@ -67,6 +67,7 @@ setCollegeStationWeather();
   
   function setMainDarkTheme(){
       document.getElementById("stylesheet").href = "dark_styles1.css";
+      document.getElementById("darkModeToggle").innerHTML = "";
       theme = "dark";
       mainTheme = "first";
       localStorage.setItem("theme", "dark");
@@ -74,6 +75,7 @@ setCollegeStationWeather();
   
   function setMainLightTheme(){
       document.getElementById("stylesheet").href = "styles1.css";
+      document.getElementById("darkModeToggle").innerHTML = "";
       theme = "light";
       mainTheme = "first";
       localStorage.setItem("theme", "light");
@@ -81,6 +83,7 @@ setCollegeStationWeather();
   
   function setSecondDarkTheme(){
       document.getElementById("stylesheet").href = "dark_styles2.css";
+      document.getElementById("darkModeToggle").innerHTML = "&nbsp;Light Mode";
       theme = "dark";
       mainTheme = "second";
       localStorage.setItem("theme", "dark");
@@ -88,6 +91,7 @@ setCollegeStationWeather();
   
   function setSecondLightTheme(){
       document.getElementById("stylesheet").href = "styles2.css";
+      document.getElementById("darkModeToggle").innerHTML = "&nbsp;Dark Mode";
       theme = "light";
       mainTheme = "second";
       localStorage.setItem("theme", "light");

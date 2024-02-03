@@ -135,7 +135,12 @@ nav li:hover{
   justify-content: center;
   height: 1%;
   align-items: center;
-  
+}
+
+.dark-mode-toggle:hover{
+  scale: 1.1;
+  transition: 1s;
+  cursor: pointer;
 }
 
 #weather{
@@ -231,3 +236,18 @@ footer a{
     justify-content: center;
     align-items: center;
 }
+/* 
+.gg-dark-mode{
+  height: 100% !important;
+  width: auto !important;
+}
+
+.gg-dark-mode::before{
+  height: 100% !important;
+  width: auto !important;
+}
+
+.gg-dark-mode::after{
+  height: 100% !important;
+  width: auto !important;
+} */
