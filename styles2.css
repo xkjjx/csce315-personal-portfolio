@@ -216,3 +216,8 @@ footer a{
   transition: 1s;
   height:1%;
 }
+
+#spotify{
+  justify-content: center;
+  display: flex;
+}

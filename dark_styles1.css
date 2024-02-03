@@ -189,15 +189,17 @@ footer a{
 #resume{
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
-    margin:0em 10em 5em 10em;
     height: 1100px;
 }
 #resumePDF{
     height: 100%;
-    width: 80%;
-
+    width: 100%;
 }
+
+#resumeAbout h2{
+    text-align: center;
+    padding: 20px 0px 0px;
+  }
 
 
 #body p a{
@@ -282,5 +284,10 @@ to {
     transition: 1s;
     height:1%;
 }
+
+#spotify{
+    justify-content: center;
+    display: flex;
+  }
 
 

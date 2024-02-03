@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id = "stylesheet" rel="stylesheet" href="styles.css">
-    
+    <link id = "stylesheet" rel="stylesheet" href="styles1.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/dark-mode.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kevin Johnson</title>
 </head>
 <body> 
-        <header>      
+        <header id="nav">
+            <!-- <h3 onclick="hideNavbar()">&#8592</h3>   -->
             <h1>KEVIN JOHNSON</h1> 
+            
             <nav>      
                 <div id="header" class="container">        
                     <ul>          
-                        <li><a href="#">About</a></li>
+                        <li><a href="index.html">About</a></li>
                         <li><a href="service.html"> Service </a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="resume.html">Qualifications</a></li>
                         <li><a href="listenwithme.html">Music</a></li>
+                        <li><a href='ai_generated_quiz.html'>AI Generated Page</a></li>
                     </ul>      
                 </div>    
             </nav>
-            <ul>
-                <li color="white">hello</li>
-            </ul>
             
-            <button class="button" onclick="switchStyles()" onmouseover="switchButtonStyle()" onmouseout="switchButtonStyle()">
-                <svg id="night_mode_svg" class="" height="2em" width="2em" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                    viewBox="0 0 47.539 47.539" xml:space="preserve">
+            <div class="socials">
+                <a href="https://github.com/xkjjx" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/kjonasj/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://www.instagram.com/kevinjj03/" class="fa fa-instagram" target="_blank"></a>
+            </div>
+            <div class="dark-mode-toggle">
+                <button class="gg-dark-mode" onclick="switchStyles()"></button>
+            </div>
+            <div id="toggle1" class="dark-mode-toggle" onclick="toggleThemes()">
+                <button>Swap themes</button>
+            </div>
+            <div id="toggle2" class="dark-mode-toggle" onclick="toggleThemes()">
+                <button><p><i class="fa fa-repeat"></i>&nbsp;Swap themes</p></button>
+            </div>
+            
 
-                    <g>
-                        <g>
-                            <path d="M24.997,47.511C11.214,47.511,0,36.298,0,22.515C0,12.969,5.314,4.392,13.869,0.132
-                                c0.385-0.191,0.848-0.117,1.151,0.186s0.381,0.766,0.192,1.15C13.651,4.64,12.86,8.05,12.86,11.601
-                                c0,12.681,10.316,22.997,22.997,22.997c3.59,0,7.033-0.809,10.236-2.403c0.386-0.191,0.848-0.117,1.151,0.186
-                                c0.304,0.303,0.381,0.766,0.192,1.15C43.196,42.153,34.597,47.511,24.997,47.511z M12.248,3.372C5.862,7.608,2,14.709,2,22.515
-                                c0,12.68,10.316,22.996,22.997,22.996c7.854,0,14.981-3.898,19.207-10.343c-2.668,0.95-5.464,1.43-8.346,1.43
-                                c-13.783,0-24.997-11.214-24.997-24.997C10.861,8.761,11.327,6.005,12.248,3.372z"/>
-                        </g>
-                    </g>
-                </svg>
-            </button>
             
-        </header>  
-        <section id="about">    
+        </header>
+        <div id="weather">
+            <header id="weatherHeader">
+                Welcome to My Website!
+            </header>
+        </div>  
+        
+        <section id="about">
+            <img class="pfp" src="images/pfp.jpg" alt="Kevin Johnson"/>
             <div id="body" class="container">
                 <h2>
                     About Me
@@ -55,22 +63,45 @@
                     I am well-versed in many principles of Computer Science that has allowed me to gain a fundamental understanding of how computers work. As someone who's always been fascinated by this complex machine that we take for granted, I've loved learning every bit about the complex systems people have built to make our modern world possible. More recently in college, I've started to work with others on huge projects with massive impact. Through this, I've realized that my work as a leader can be much more profound than my work as an individual - thus while I value my ability to be technically strong, I'm working harder to become a better leader and communicator.
                 </p>
                 <p>
-                    At Texas A&M University, I am involved in MSC Hospitality and Student Engineers' Council. Please see my service page for further details.
+                    At Texas A&M University, I am involved in MSC Hospitality and Student Engineers' Council. In MSC Hospitality, I participated in many service events that helped local residents of the Bryan-College Station area as well as Texas A&M students. In SEC (Student Engineers' Council), I helped organize the Spring 2024 Engineering Career Fair, the pinnacle recruiting event for Texas A&M Engineers.
                 </p>
                 <p>
-                    In addition, I love running - in my time at high school cross country, I have built up to 60 miles per week at certain points and I believe this played a crucial role in making me who I am today. I still run ocassionally, so feel free to check my running page!
+                    In addition, I love running - in my time at high school cross country, I have built up to 60 miles per week at certain points and I believe this played a crucial role in making me who I am today. I still run occasionally, although I am far from the fitness I achieved during when I ran Cross Country.
+                </p>
+                <p>
+                    You can find the github link for this website <a href="https://github.com/csce-315-331-2024a/project-1-xkjjx">HERE</a> (assuming you have access).
                 </p>
             </div>
             <div></div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
-                <p>Phone number: (551)233-3003</p>
+            <div id="footerSecond">
+                <footer >
+                    <div class="container">
+                        <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
+                        <p>Phone number: (551)233-3003</p>
+                        <div class="socials">
+                            <a href="https://github.com/xkjjx" class="fa fa-github" target="_blank"></a>
+                            <a href="https://www.linkedin.com/in/kjonasj/" class="fa fa-linkedin" target="_blank"></a>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            
-        </footer>
+        </section>
+
+        <div id="footerFirst">
+            <footer>
+                <div class="container">
+                    <p>Email: john2003.kjj@gmail.com | kjj@tamu.edu</p>
+                    <p>Phone number: (551)233-3003</p>
+                    <div class="socials">
+                        <a href="https://github.com/xkjjx" class="fa fa-github" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/kjonasj/" class="fa fa-linkedin" target="_blank"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        
+        
 </body>
 </html>
 <script src="script.js"></script>
