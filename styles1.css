@@ -119,6 +119,7 @@ nav li:hover{
     text-align: center;
     text-decoration: underline;
     padding: 20px 0px 0px;
+    margin: auto;
     font-size:xx-large;
     color: rgba(var(--primary-color-contrast));
 }
