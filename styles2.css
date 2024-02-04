@@ -145,7 +145,7 @@ nav li:hover{
   margin: auto;
   transition: 1s;
   justify-content: center;
-  height: 5%;
+  height: 40px;
   align-items: center;
 }
 
