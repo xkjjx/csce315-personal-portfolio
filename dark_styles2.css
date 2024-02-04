@@ -59,8 +59,8 @@ nav {
   width: auto;
   background-image: url("images/background1.jpg");
   background-blend-mode: overlay;
-  background-color: rgba(var(--primary-color-1), 0.5);
   background-attachment: fixed;
+  background-color: rgba(var(--primary-color-1), 0.5);
 }
 
 #resumeAbout {
@@ -91,6 +91,13 @@ header a{
   color: rgba(var(--primary-color-contrast));
   text-decoration: none;
   transition: 1s;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+header a:hover{
+  color: rgba(var(--primary-color));
+  transition: 1s;
 }
 
 nav ul {
@@ -102,11 +109,16 @@ nav ul {
 }
 
 nav li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  padding: 10% 0% 10% 1%;
   color: rgba(var(--primary-color-contrast));
   transition: 1s;
-  height: 100%;}
+  height: 60px;
+  width: 100%;
+}
 
 nav li:hover{
   background-color: rgba(var(--primary-color-contrast));
@@ -135,7 +147,6 @@ nav li:hover{
   justify-content: center;
   height: 5%;
   align-items: center;
-  
 }
 
 .dark-mode-toggle:hover{
@@ -237,3 +248,18 @@ footer a{
     justify-content: center;
     align-items: center;
 }
+/* 
+.gg-dark-mode{
+  height: 100% !important;
+  width: auto !important;
+}
+
+.gg-dark-mode::before{
+  height: 100% !important;
+  width: auto !important;
+}
+
+.gg-dark-mode::after{
+  height: 100% !important;
+  width: auto !important;
+} */
