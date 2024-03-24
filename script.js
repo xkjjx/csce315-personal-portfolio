@@ -5,26 +5,11 @@ if(theme === null){
     localStorage.setItem("theme", "light");
 }
 
-let mainTheme = localStorage.getItem("mainTheme");
-if (mainTheme === null){
-    mainTheme = "first";
-    localStorage.setItem("mainTheme", "first");
-}
 if(theme === "dark"){
-    if(mainTheme === "first"){
-        setMainDarkTheme();
-    }
-    else{
-        setSecondDarkTheme();
-    }
+    setDarkTheme();
 }
 else{
-    if (mainTheme === "first"){
-        setMainLightTheme();
-    }
-    else{
-        setSecondLightTheme();
-    }
+    setLightTheme();
 }
 setCollegeStationWeather();
 let currentDate = new Date();
@@ -44,37 +29,18 @@ console.log(time);
   
   
   
-function setMainDarkTheme(){
-    document.getElementById("stylesheet").href = "dark_styles1.css";
+function setDarkTheme(){
+    document.getElementById("stylesheet").href = "dark_styles.css";
     document.getElementById("darkModeToggle").innerHTML = "";
-    theme = "dark";
-    mainTheme = "first";
     localStorage.setItem("theme", "dark");
 }
   
-function setMainLightTheme(){
-    document.getElementById("stylesheet").href = "styles1.css";
+function setLightTheme(){
+    document.getElementById("stylesheet").href = "styles.css";
     document.getElementById("darkModeToggle").innerHTML = "";
-    theme = "light";
-    mainTheme = "first";
     localStorage.setItem("theme", "light");
 }
   
-function setSecondDarkTheme(){
-    document.getElementById("stylesheet").href = "dark_styles2.css";
-    document.getElementById("darkModeToggle").innerHTML = "&nbsp;Light Mode";
-    theme = "dark";
-    mainTheme = "second";
-    localStorage.setItem("theme", "dark");
-}
-  
-function setSecondLightTheme(){
-    document.getElementById("stylesheet").href = "styles2.css";
-    document.getElementById("darkModeToggle").innerHTML = "&nbsp;Dark Mode";
-    theme = "light";
-    mainTheme = "second";
-    localStorage.setItem("theme", "light");
-}
   
 function format24HRto12HR(strin){
     let hours = strin.split(":")[0];
@@ -91,25 +57,13 @@ function format24HRto12HR(strin){
 }
   
 function switchStyles(){
-    if (mainTheme === "first"){
-        if (theme === "light"){
-            theme = "dark";
-            setMainDarkTheme();
-        }
-        else{
-            theme = "light";
-            setMainLightTheme();
-        }
+    if (theme === "light"){
+        theme = "dark";
+        setDarkTheme();
     }
     else{
-        if (theme === "light"){
-            theme = "dark";
-            setSecondDarkTheme();
-        }
-        else{
-            theme = "light";
-            setSecondLightTheme();
-        }
+        theme = "light";
+        setLightTheme();
     }
 }
   
@@ -147,27 +101,6 @@ function setCollegeStationWeather(){
     });
 }
 
-
-function toggleThemes(){
-    if (mainTheme === "first"){
-        if( theme === "light"){
-            setSecondLightTheme();
-        }
-        else{
-            setSecondDarkTheme();
-        }
-        localStorage.setItem("mainTheme", "second");
-    }
-    else{
-        if( theme === "light"){
-            setMainLightTheme();
-        }
-        else{
-            setMainDarkTheme();
-        }
-        localStorage.setItem("mainTheme", "first");
-    }
-}
   
 const wmoCodes =
 {
